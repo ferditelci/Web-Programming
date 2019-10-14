@@ -1,0 +1,385 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlGlobal" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="tr">
+    <head>
+        <link href="https://cdn.ticimax.com/v8100/App_Themes/Konsept-4-Pembe/style.css?v=164847" rel="stylesheet" type="text/css" />
+        <title>
+            Dermo Ecza Market
+        </title>
+
+        <script src= "https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script  type="text/javascript">var pageInitialized = false;</script>
+        <link href="https://cdn.ticimax.com/Version/v8.10.2/8/bundles/ticimax.core.min.css?v=8.10.2.304.164847" rel="stylesheet" />
+        <script  src="https://cdn.ticimax.com/Version/v8.10.2/8/bundles/ticimax.structure.min.js?v=8.10.2.304.164847" type="text/javascript"></script>
+        <script ticimax="true" type="text/javascript" src="https://cdn.ticimax.com/v8100/App_Themes/Konsept-4-Pembe/Temp.js?v=164847"></script>
+        <link rel="stylesheet" type="text/css" href="custom.css">
+    </head>
+
+
+
+    <body>
+
+        <div id="header" class="homeHeader">
+            
+            <div class="headerContent">  
+
+                <!--sepet-->
+                <div class="mycart">
+                    <a href="/Sepetim.aspx" rel="nofollow">
+                        <span class="sepetTecxt" tici-lang="GlobalMasterPage_Sepetim"></span>
+                        <span id="spnTopSepetToplamUrun" class="sepetUrunSayisi"></span>
+                        <span class="sepetUrun" tici-lang="GlobalMasterPage_SepetUrun"></span>
+                        <span id="spnTopSepetToplamTutar" class="sepetTopTutar" style="display: none;"></span>
+                    </a>
+                    <div class="CartProduct" style="display: none;">
+                        <ul class="SProduct" style="display: block;"></ul>
+                        <ul id="ulUstSepetteUrunYok" class="divustSepetteUrunYok">
+                            <li>
+                                <span class="spanustSepetteUrunYok" tici-lang="GlobalMasterPage_SepetUrunYok"></span>
+                            </li>
+                        </ul>
+                        <ul class="SPrice">
+                            <li>
+                                <span tici-lang="GlobalMasterPage_SepetGenelToplam"></span>:
+                                <span id="spnUstSepetToplamTutar" class="sepetToplamTutar"></span>
+                            </li>
+                        </ul>
+
+                        <a href="/sepetim.aspx" class="button headerCartBtn" style="display: none;" tici-lang="BlokModul_SepetBlok_Sepetim" rel="nofollow"></a>
+                        <a href="javascript:GirisKontrol(0, '/SiparisTamamla.aspx');" class="button headerOrderBtn" style="display: none;" tici-lang="Sepet_AlisverisiTamamla" rel="nofollow"></a>
+                    </div>
+                </div>
+                <!--sepet-->
+
+
+                <!--search-->
+                <div id="divTopProductSearch" class="searchContent ">
+                    <div class="search" id="divArama">
+                        <button class="ButtonMic" id="start_button" type="button" onclick="return startButton(event);" style="display: inline-block; cursor: pointer;">
+                            <img alt="Start" id="start_img" src="/Scripts/speech/mic.gif" width="32">
+                        </button>
+                        <input name="ctl00$txtbxArama" type="text" id="txtbxArama" onkeypress="return ProductSeachTopOnKeyPress(event)" class="urunSearchAC rsbInput" autocomplete="off" placeholder="Arama" />
+                        
+                        <input type="button" name="" onclick="ProductSearchTop()" tici-lang-value="BlokModul_UrunArama_Ara" tici-lang-title="BlokModul_UrunArama_Ara" id="btnKelimeAra" class="rsbButton" />
+                    </div>
+                </div>
+                <!--search-->
+            </div>
+
+            <image href='index.html' src="dermologo.png" class="image1"></image>
+
+
+            <div class="headerContent"> 
+
+
+                <div class="navigation">
+
+                    <div>
+                        <div id="divUcTopMenu">
+                            <ul class="HeaderMenu2 navUl" id="HeaderMenu2">
+                                <li>
+                                    <a href='#' target="_self" title="KATEGORİLER">KATEGORİLER</a>
+
+                                    <ul>
+                                        <li>
+                                            <a href='/ko' target="_self" title="KOZMETİK & KİŞİSEL BAKIM">KOZMETİK & KİŞİSEL BAKIM</a>
+
+                                            <ul>
+                                                <li>
+                                                    <a href='/sac-bakim-urunleri' target="_self" title="SAÇ BAKIM ÜRÜNLERİ">SAÇ BAKIM ÜRÜNLERİ</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href='/sampuan' target="_self" title="ŞAMPUAN">ŞAMPUAN</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='/sac-maskesi-50' target="_self" title="SAÇ MASKESİ">SAÇ MASKESİ</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href='/agiz-bakim-urunleri' target="_self" title="AĞIZ BAKIM ÜRÜNLERİ">AĞIZ BAKIM ÜRÜNLERİ</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href='/dis-macunu-48' target="_self" title="DİŞ MACUNU">DİŞ MACUNU</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='/is-macunu-ve-beyazlaticisi' target="_self" title="DİŞ MACUNU VE BEYAZLATICISI">DİŞ MACUNU VE BEYAZLATICISI</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='/dis-fircasi' target="_self" title="DİŞ FIRÇASI">DİŞ FIRÇASI</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href='/saglik-kisisel-bakim-urunleri-16' target="_self" title="SAĞLIK KİŞİSEL BAKIM ÜRÜNLERİ">SAĞLIK KİŞİSEL BAKIM ÜRÜNLERİ</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href='/cilt-bakim-17' target="_self" title="CİLT BAKIM">CİLT BAKIM</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='/gunes-kremi-20' target="_self" title="GÜNEŞ KREMİ">GÜNEŞ KREMİ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='/yuz-maskesi-37' target="_self" title="YÜZ MASKESİ">YÜZ MASKESİ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='/deodorant-39' target="_self" title="DEODORANT">DEODORANT</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href='/bebek-urunleri-14' target="_self" title="BEBEK ÜRÜNLERİ">BEBEK ÜRÜNLERİ</a>
+                                            <ul>
+                                                <li>
+                                                    <a href='/bebek-bezi-33' target="_self" title="BEBEK BEZİ">BEBEK BEZİ</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/mama-30' target="_self" title="MAMA">MAMA</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/bebek-yagi-23' target="_self" title="BEBEK YAĞI">BEBEK YAĞI</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/bebek-vazelin-27' target="_self" title="BEBEK VAZELİN">BEBEK VAZELİN</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/bebek-nemlendirici-38' target="_self" title="BEBEK NEMLENDİRİCİ">BEBEK NEMLENDİRİCİ</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/pisik-15' target="_self" title="PİŞİK">PİŞİK</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/pudra-22' target="_self" title="PUDRA">PUDRA</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/bebek-sampuani-26' target="_self" title="BEBEK ŞAMPUANI">BEBEK ŞAMPUANI</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/sac-spreyi-25' target="_self" title="SAÇ SPREYİ">SAÇ SPREYİ</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/bebek-bakim-seti-21' target="_self" title="BEBEK BAKIM SETİ">BEBEK BAKIM SETİ</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/bebek-camasir-deterjani-24' target="_self" title="BEBEK ÇAMAŞIR DETERJANI">BEBEK ÇAMAŞIR DETERJANI</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/camasir-yumusaticisi-29' target="_self" title="ÇAMAŞIR YUMUŞATICISI">ÇAMAŞIR YUMUŞATICISI</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href='/anne-urunleri-31' target="_self" title="ANNE ÜRÜNLERİ">ANNE ÜRÜNLERİ</a>
+                                            <ul>
+                                                <li>
+                                                    <a href='/meme-kremi-32' target="_self" title="MEME KREMİ">MEME KREMİ</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href='/vitamin-saglik-18' target="_self" title="VİTAMİN-SAĞLIK">VİTAMİN-SAĞLIK</a>
+                                            <ul>
+                                                <li>
+                                                    <a href='/gida-takviyesi-19' target="_self" title="GIDA TAKVİYESİ">GIDA TAKVİYESİ</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/pastil-49' target="_self" title="PASTİL">PASTİL</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href='/saglik-ve-medikal-urunler-34' target="_self" title="SAĞLIK VE MEDİKAL ÜRÜNLER">SAĞLIK VE MEDİKAL ÜRÜNLER</a>
+                                            <ul>
+                                                <li>
+                                                    <a href='/tansiyon-aleti-35' target="_self" title="TANSİYON ALETİ">TANSİYON ALETİ</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/ates-olcer-36' target="_self" title="ATEŞ ÖLÇER">ATEŞ ÖLÇER</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/igne-ucu-40' target="_self" title="İĞNE UCU">İĞNE UCU</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/lanset-41' target="_self" title="LANSET">LANSET</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/havali-yatak-42' target="_self" title="HAVALI YATAK">HAVALI YATAK</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/steril-maske-44' target="_self" title="STERİL MASKE">STERİL MASKE</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/tekerlekli-sandalye-45' target="_self" title="TEKERLEKLİ SANDALYE">TEKERLEKLİ SANDALYE</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/kompres-46' target="_self" title="KOMPRES">KOMPRES</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/sogutucu-47' target="_self" title="SOĞUTUCU">SOĞUTUCU</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/nebulizator-51' target="_self" title="NEBULİZATÖR">NEBULİZATÖR</a>
+                                                </li>
+                                                <li>
+                                                    <a href='/baskul-43' target="_self" title="BASKÜL">BASKÜL</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            if (typeof topMenuCallback != 'undefined') { topMenuCallback(); }
+        </script>
+        <script type="text/javascript">globalBlokModel = 4;  $(document).ready(function () 
+            {
+                initLang();
+                if (typeof blockCompleteCallback !== 'undefined') {  blockCompleteCallback(); }
+                if (typeof blocksLoaded !== 'undefined') { blocksLoaded(); }
+                if (typeof urunListCallback !== 'undefined') { urunListCallback();}
+
+                InitTimers();
+                $(".favoriteslist[init='false']").trigger('onload');
+            });
+        </script>
+
+
+        <div class="footerCenter">
+            <style>
+                .ticiFooterContent ul{margin:0;padding:0}.ticiFooterContent *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.ticiFooterContent .img-responsive{min-width:100%;max-width:100%}.ticiFooterCenter{background-color:#000;padding:40px 0}.ticiFooterBottom{background-color:#000;border-top:1px solid #3b3b3b}.ticiFooterContent li{margin:0;padding:0;list-style-type:none}.ticiFooterContent .footerRow{margin-left:-15px;margin-right:-15px}.ticiFooterContent .footerRow:After{clear:both;display:table;content:""}.ticiFooterContent .footerCol{padding-left:15px;padding-right:15px;float:left;position:relative;min-height:1px}.ticiFooterContent .footerCol{padding-left:15px;padding-right:15px;float:left;position:relative;min-height:1px}.ticiFooterContent .footerCol.f-col-4{width:33.333333333%}.ticiFooterContent .footerCol.f-col-3{width:25%}.ticiFooterContent .footerCol.f-col-8{width:66.66666666%}.ticiFooterContent .footerCol.f-col-12{width:100%}.ticiFooterContent .fRight{float:right}.footerLogo{display:block;text-align:center;margin:20px 0}.footerSosyalMedya{width:100%;text-align:center;margin-bottom:20px}.footerSosyalMedya a{display:inline-block;margin:0 10px;color:#5f5f5f;font-size:18px}.footerSosyalMedya a:hover{color:#616c70}.ticiFooterContent .ticiFooterMenu h3{margin-bottom:20px;font-weight:600;font-size:15px;color:#fff;padding:0}.ticiFooterContent .ticiFooterMenu h3 span{float:left}.ticiFooterContent .ticiFooterMenu h3 span:before{font-size:20px;line-height:15px}.ticiFooterContent .ticiFooterMenu ul.List.ticiFooterContent .ticiFooterMenu ul.List:After{clear:both;display:table;content:""}.ticiFooterContent .ticiFooterMenu ul.List.FooterSocial li{width:50%;float:left}.ticiFooterContent .ticiFooterMenu ul.List li.Item{margin-bottom:5px}.ticiFooterContent .ticiFooterMenu ul.List li.Item a.Link{color:#fff;font-size:13px;padding:0;font-weight:normal;line-height:23px;width:100%;text-decoration:none}.ticiFooterContent .ticiFooterMenu ul.List li.Item a.Link:hover{text-decoration:underline!important}.ticiFooterContent .ticiFooterMenu ul.List.FooterSocial li.Item a.Link.ticiFooterContent .ticiFooterMenu ul.List.FooterSocial li.Item a.Link i{width:20px;height:23px;line-height:23px;text-align:left;font-size:16px;margin-right:5px}.ticiFooterContent .ticiFooterMenu ul.List.FooterApp li.Item a.Link i{font-size:18px;line-height:23px;float:left;margin-right:5px}.ticiFooterContent .ticiBankaLogo{padding:30px 0;width:100%;text-align:left;float:left}.ticiFooterContent .ticiCopyDiv{padding:35px 0;text-align:right;font-size:12px;color:#fff}.ticiFooterContent .ticiSeoText{font-size:10px;margin-top:20px;color:#b7b7b7;text-align:center}.ticiFooterContent .ticiFooterTop.ticiFooterContent .ticiBulten{display:block;margin:0 auto;max-width:490px;text-align:left}.ticiFooterContent .ticiBulten:After{clear:both;display:table;content:""}.ticiFooterContent .ticiBulten h2{font-weight:bold;font-size:18px;text-transform:uppercase;margin-bottom:0;color:#fff}.ticiFooterContent .ticiBulten p{font-size:12px;color:#fff;font-weight:600;margin-top:10px}.ticiFooterContent .ticiBultenContent{float:left;width:100%;margin-top:10px}.ticiFooterContent #divNewsLetter{display:block;padding:0;margin:0;float:right;position:relative;width:100%}.ticiFooterContent #divNewsLetter label{display:none}.ticiFooterContent #UpdatePanel1{position:relative;float:right;width:100%;padding:0;margin:0;border:0}.ticiFooterContent #txtbxNewsletterMail{display:inline-block;color:#999;background:#fff;border:1px solid #e0e0e0;width:100%;height:36px;padding:0 120px 0 10px;font-size:13px;text-align:left;font-weight:normal;border-radius:0;opacity:1}.ticiFooterContent #txtbxNewsletterMail::-webkit-input-placeholder{color:#999}.ticiFooterContent #txtbxNewsletterMail:-moz-placeholder{color:#999}.ticiFooterContent #txtbxNewsletterMail::-moz-placeholder{color:#999}.ticiFooterContent #txtbxNewsletterMail:-ms-input-placeholder{color:#999}.ticiFooterContent #txtbxNewsletterMail:focus{color:#999}.ticiFooterContent #btnMailKaydet{float:right;position:absolute;top:3px;right:6px;width:auto!important;height:30px;text-transform:uppercase;color:#000!important;border:none!important;border-radius:0;line-height:30px;background:#fff!important;font-weight:normal;font-size:12px!important;padding:0;text-align:center}.ticiFooterContent #btnMailKaydet:hover{background:#000!important;color:#fff!important}.ticiFooterContent .ebultenGelecek #divNewsLetter{display:block;padding:0}@media (max-width:768px){.ticiFooterContent{margin:0 15px}.ticiFooterCenter{background-color:#000;padding:0 0}.ticiFooterBottom{background-color:#000;border-top:1px solid #3b3b3b}.ticiFooterContent .footerCol.f-col-2{width:100%}.ticiFooterContent .footerCol.f-col-3{width:100%}.ticiFooterContent .footerCol.f-col-4{width:100%}.ticiFooterContent .footerCol.f-col-xs-12{width:100%}.fRight{float:none}.ticiFooterContent .ticiBankaLogo{text-align:center}.ticiFooterContent .ticiCopyDiv{text-align:center}.ticiFooterContent .ticiFooterMenu .footerCol .fmenu-wrap{border:1px solid #3b3b3b;margin-bottom:-1px}.ticiFooterContent .ticiFooterMenu .footerCol:last-child .fmenu-wrap{margin-bottom:0}.ticiFooterContent .ticiFooterMenu .footerCol h3{line-height:30px;position:relative;text-align:left;padding-left:10px;margin-bottom:0;font-size:12px}.ticiFooterContent .ticiFooterMenu .footerCol h3 span:before{font-size:12px!important;line-height:30px}.ticiFooterContent .ticiFooterMenu .footerCol.active h3{border-bottom:1px solid #3b3b3b}.ticiFooterContent .ticiFooterMenu .footerCol h3:after{content:'+';position:absolute;right:0;width:30px;text-align:center}.ticiFooterContent .ticiFooterMenu .footerCol.active h3:after{content:'-'}.ticiFooterContent .ticiFooterMenu ul.List{display:none;margin:10px 0}.ticiFooterContent .ticiFooterMenu ul.List li.Item a.Link{padding:0;font-size:12px;text-align:left;display:block;padding-left:10px;line-height:20px}.ticiFooterContent .ticiFooterMenu .footerCol.active ul.List{display:block}.ticiFooterContent .ticiBulten{margin:10px}.ticiFooterContent .ticiBulten h2{font-size:12px}}
+            </style>
+
+            <div class="ticiFooterContent">
+                <div class="ticiFooterTop">
+                    <div class="ticiContainer">
+                        <div class="footerLogo" style="text-align: center;"></div>
+                            <div class="footerSosyalMedya">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticiFooterCenter">
+                        <div class="ticiContainer">
+                            <div class="ticiFooterMenu footerRow">
+                                <div class="footerCol f-col-3">
+                                    <div class="fmenu-wrap">
+                                        <h3>Kurumsal</h3>
+                                        <ul class="List">
+                                            <li class="Item">
+                                                <a class="Link" href="">Anasayfa</a>
+                                            </li>
+                                            <li class="Item">
+                                                <a class="Link" href="">Hakkımızda</a>
+                                            </li>
+                                            <li class="Item">
+                                                <a class="Link" href="">Mağazalarımız</a>
+                                            </li>
+                                            <li class="Item">
+                                                <a class="Link" href="">Bize Ulaşın</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footerCol f-col-3">
+                                <div class="fmenu-wrap">
+                                    <h3>Müşteri İlişkileri</h3>
+                                    <ul class="List">
+                                        <li class="Item">
+                                            <a href="https://www.dermoeczamarket.com/UyeOl.aspx">Üyelik</a>
+                                        </li>
+                                        <li class="Item">
+                                            <a class="Link" href="">Alışveriş</a>
+                                        </li>
+                                        <li class="Item">
+                                            <a class="Link" href="">Kargo &amp; Teslimat</a>
+                                        </li>
+                                        <li class="Item">
+                                            <a class="Link" href="">KVKK</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-3">
+                                <div class="fmenu-wrap">
+                                    <h3>Yardım</h3>
+                                    <ul class="List">
+                                        <li class="Item">
+                                            <a class="Link" href="">Müşteri Hizmetleri</a>
+                                        </li>
+                                        <li class="Item">
+                                            <a class="Link" href="">Sıkça Sorulan Sorular</a>
+                                        </li>
+                                        <li class="Item">
+                                            <a class="Link" href="">Kargo Takibi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-3">
+                                <div class="ticiBulten">
+                                    <h2>Bizden Haberler</h2>
+                                    <p>Bültenimize Üye Olun ! Tüm İndirim ve Fırsatlardan İlk Sizin Haberiniz Olsun !</p>
+                                    <div class="ticiBultenContent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticiFooterBottom">
+                        <div class="ticiContainer">
+                            <div class="footerRow">
+                                <div class="footerCol f-col-8 f-col-xs-12">
+                                    <div class="ticiBankaLogo">
+                                        <img alt="" src="https://cdn.ticimax.com/Uploads/hazirSablonResimleri/footerImg/bankimg-2.png">
+                                    </div>
+                                </div>
+                                <div class="footerCol f-col-4 f-col-xs-12 fRight">
+                                    <div class="ticiCopyDiv">
+                                        © 2019 <b>dermoeczamarket.com</b>&nbsp;- Tüm Hakları Saklıdır.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var windowidth=window.innerWidth;$(document).ready(function(){$('#divNewsLetter').prependTo('.ticiBultenContent');$("body").on("click",".ticiFooterMenu .footerCol",function(){$(this).toggleClass("active");});});
+                </script>
+            </div>
+        </div>
+        <div id="divTicimaxCopyrightContent" align="center">
+            <a class="mobilTicimaxLogo" href="https://www.ticimax.com" title="Ticimax E-Ticaret Sistemleri" target="_blank">
+                <img src="https://cdn.ticimax.com/v888/App_Themes/Default/logo-60x20px.svg" style="width: 70px;" alt="Ticimax E-Ticaret Sistemleri" />
+            </a>
+            <p id="ticimaxCopyright" class="ticimax_link_main" style="color: #000; margin: 15px 0; display: block !important;">
+                Bu site Ticimax<sup>®</sup> Gelişmiş <a href='https://www.ticimax.com' style='color: #0066CC;' target='_blank' class='ticimax_link' title='E Ticaret Sistemleri Ticimax'> E-Ticaret </a> sistemleri ile hazırlanmıştır.
+            </p>
+        </div>
+
+
+        <div id="back-to-top"><a href="#"></a></div>
+
+    </body>
+</html>
+
+
+
+
+
+
