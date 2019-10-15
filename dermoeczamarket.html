@@ -1,0 +1,2210 @@
+<html>
+
+<head>
+    <title>
+        Dermo Ecza Market
+    </title>
+    <link rel="Shortcut Icon" href="https://www.dermoeczamarket.com/Uploads/Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+    
+    #ul1 {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        width: 250px;
+    }
+    
+    #ul2 {
+        padding: 0;
+        background-color: white;
+        width: 220px;
+    }
+    
+    #ul3 {
+        padding: 0;
+        background-color: white;
+        width: 200px;
+    }
+    
+    #urun1 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun2 {
+        margin: 69px 0px 0px 0px;
+    }
+    
+    #urun3 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun4 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun1s {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun2s {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun3s {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun4s {
+        margin: 80px 0px 0px 0px;
+    }
+    
+    #urun5 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun6 {
+        margin: 69px 0px 0px 0px;
+    }
+    
+    #urun7 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun8 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun9 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun10 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun11 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun12 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun13 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun14 {
+        margin: 69px 0px 0px 0px;
+    }
+    
+    #urun15 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun16 {
+        margin: 70px 0px 0px 0px;
+    }
+    
+    #urun1_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #urun2_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #urun1s_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #urun2s_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #urun5_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #urun6_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #urun9_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #urun10_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #urun13_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    #urun14_resim {
+        margin: 30px 0px 0px 0px;
+    }
+    
+    li {
+        border-width: 1px;
+        border-color: #EEEEEE;
+        color: black;
+        border-style: solid;
+        padding: 10;
+        left: 20px;
+        list-style-type: none;
+    }
+</STYLE>
+
+<body>
+    <div id="header">
+        <a href='dermoeczamarket.html'>
+            <image src="dermologo.png" class="image1"></image>
+        </a>
+
+        <div id="SearchButton">
+            <button v-on:click="search" class="searchButton"></button>
+        </div>
+
+        <div id="Search">
+            <input v-model="message" class="searchbar">
+        </div>
+
+        <a href='dermoeczamarket.html'>
+            <image src="like.png" class="image2"></image>
+        </a>
+
+        <a href='dermoeczamarket.html'>
+            <p class="yazi1">Favorilerim</p>
+        </a>
+
+        <a href='dermoeczamarket.html'>
+            <image src="search.png" class="image3"></image>
+        </a>
+
+        <div id="uyeGirisi_img">
+            <span v-bind:title="message">
+                    <image src="user.png"  class="uyeGirisi">
+                </span>
+        </div>
+
+        <div id="uyeGirisi">
+
+            <a href='dermoeczamarket.html'>
+                <span v-bind:title="message">
+                        <p class="yazi3">ÜYE GİRİŞİ</p>
+                    </span>
+            </a>
+
+        </div>
+
+        <div id="uyeOl">
+            <span v-bind:title="message">
+                    <a href='dermoeczamarket.html'>
+                        <p class="yazi2">| ÜYE OL</p>
+                    </a>
+                </span>
+        </div>
+
+        <a href='dermoeczamarket.html'>
+            <image src="shopping-cart.png" class="image4"></image>
+            <image src="oval.png" class="image5"></image>
+            <image src="shopping-cart-outline.png" class="image6"></image>
+            <p class="shopping-cart-number">0</p>
+        </a>
+    </div>
+
+    <div>
+        <nav class="nav1">
+            <nav class="nav2">
+
+                <ul id="ul1" class="ul4">
+                    <a>
+                        <image src="kategori.png" class="kategoriler"></image>
+                    </a>
+                    <li class="li1"><a @mouseover="Visibility(ul2)" class="a" href="#">KATEGORİLER</a></li>
+                    <li><a class="a1" href="#">KOZMETİK & KİŞİSEL BAKIM</a></li>
+                    <a>
+                        <image src="arrow.png" class="ar1"></image>
+                    </a>
+                    <div id="bebekurunleri">
+                        <span v-bind:title="message">
+                                <li><a class="a1" href="#">BEBEK ÜRÜNLERİ</a></li>
+                            </span>
+                    </div>
+                    <a>
+                        <image src="arrow.png" class="ar2"></image>
+                    </a>
+                    <li><a class="a1" href="#">ANNE ÜRÜNLERİ</a></li>
+                    <a>
+                        <image src="arrow.png" class="ar3"></image>
+                    </a>
+                    <li><a class="a1" href="#">VİTAMİN-SAĞLIK</a></li>
+                    <a>
+                        <image src="arrow.png" class="ar4"></image>
+                    </a>
+                    <li><a class="a1" href="#">SAĞLIK VE MEDİKAL<br><br> &nbsp;&nbsp; ÜRÜNLER</a></li>
+                    <a>
+                        <image src="arrow.png" class="ar5"></image>
+                    </a>
+                </ul>
+
+                <a>
+                    <image src="left-arrow.png" class="ar9"></image>
+                </a>
+                <ul id="ul2" class="konum1">
+                    <li class="li2"><a class="a2" href="#">SAÇ BAKIM ÜRÜNLERİ</a></li>
+                    <a>
+                        <image src="arrow.png" class="ar6"></image>
+                    </a>
+                    <li class="li2"><a class="a2" href="#">AĞIZ BAKIM ÜRÜNLERİ</a></li>
+                    <a>
+                        <image src="arrow.png" class="ar7"></image>
+                    </a>
+                    <li class="li2"><a class="a2" href="#">SAĞLIK KİŞİSEL BAKIM<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÜRÜNLERİ</a></li>
+                    <a>
+                        <image src="arrow.png" class="ar8"></image>
+                    </a>
+                </ul>
+
+                <a>
+                    <image src="left-arrow.png" class="ar10"></image>
+                </a>
+                <ul id="ul2" class="konum2">
+                    <li class="li2"><a class="a2" href="#">BEBEK BEZİ</a></li>
+                    <li class="li2"><a class="a2" href="#">MAMA</a></li>
+                    <li class="li2"><a class="a2" href="#">BEBEK YAĞI</a></li>
+                    <li class="li2"><a class="a2" href="#">BEBEK VAZELİN</a></li>
+                    <li class="li2"><a class="a2" href="#">BEBEK NEMLENDİRİCİ</a></li>
+                    <li class="li2"><a class="a2" href="#">PİŞİK</a></li>
+                    <li class="li2"><a class="a2" href="#">PUDRA</a></li>
+                    <li class="li2"><a class="a2" href="#">BEBEK ŞAMPUANI</a></li>
+                    <li class="li2"><a class="a2" href="#">SAÇ SPREYİ</a></li>
+                    <li class="li2"><a class="a2" href="#">BEBEK BAKIM SETİ</a></li>
+                    <li class="li2"><a class="a2" href="#">BEBEK ÇAMAŞIR DETERJANI</a></li>
+                    <li class="li2"><a class="a2" href="#">ÇAMAŞIR YUMUŞATICISI</a></li>
+                </ul>
+
+                <a>
+                    <image src="left-arrow.png" class="ar11"></image>
+                </a>
+                <ul id="ul2" class="konum3">
+                    <li class="li2"><a class="a2" href="#">MEME KREMİ</a></li>
+                </ul>
+
+                <a>
+                    <image src="left-arrow.png" class="ar12"></image>
+                </a>
+
+                <ul id="ul2" class="konum4">
+
+                    <li class="li2"><a class="a2" href="#">GIDA TAKVİYESİ</a></li>
+                    <li class="li2"><a class="a2" href="#">PASTİL</a></li>
+                </ul>
+
+                <a>
+                    <image src="left-arrow.png" class="ar13"></image>
+                </a>
+                <ul id="ul2" class="konum5">
+
+                    <li class="li2"><a class="a2" href="#">TANSİYON ALETİ</a></li>
+                    <li class="li2"><a class="a2" href="#">ATEŞ ÖLÇER</a></li>
+                    <li class="li2"><a class="a2" href="#">İĞNE UCU</a></li>
+                    <li class="li2"><a class="a2" href="#">LANSET</a></li>
+                    <li class="li2"><a class="a2" href="#">HAVALI YATAK</a></li>
+                    <li class="li2"><a class="a2" href="#">STERİL MASKE</a></li>
+                    <li class="li2"><a class="a2" href="#">TEKERLEKLİ SANDALYE</a></li>
+                    <li class="li2"><a class="a2" href="#">KOMPRES</a></li>
+                    <li class="li2"><a class="a2" href="#">SOĞUTUCU</a></li>
+                    <li class="li2"><a class="a2" href="#">NEBULİZATÖR</a></li>
+                    <li class="li2"><a class="a2" href="#">BASKÜL</a></li>
+                </ul>
+
+                <a>
+                    <image src="left-arrow.png" class="ar14"></image>
+                </a>
+                <ul id="ul3" class="konum6">
+
+                    <li class="li2"><a class="a2" href="#">ŞAMPUAN</a></li>
+                    <li class="li2"><a class="a2" href="#">SAÇ MASKESİ</a></li>
+                </ul>
+
+                <a>
+                    <image src="left-arrow.png" class="ar15"></image>
+                </a>
+                <ul id="ul3" class="konum7">
+
+                    <li class="li2"><a class="a2" href="#">DİŞ MACUNU</a></li>
+                    <li class="li2"><a class="a2" href="#">DİŞ MACUNU VE <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BEYAZLATICISI</a></li>
+                    <li class="li2"><a class="a2" href="#">DİŞ FIRÇASI</a></li>
+                </ul>
+
+                <a>
+                    <image src="left-arrow.png" class="ar16"></image>
+                </a>
+                <ul id="ul3" class="konum8">
+
+                    <li class="li2"><a class="a2" href="#">CİLT BAKIM</a></li>
+                    <li class="li2"><a class="a2" href="#">GÜNEŞ KREMİ</a></li>
+                    <li class="li2"><a class="a2" href="#">YÜZ MASKESİ</a></li>
+                    <li class="li2"><a class="a2" href="#">DEODORANT</a></li>
+                </ul>
+            </nav>
+        </nav>
+
+        <div id="sliderPanel">
+            <a href='dermoeczamarket.html'>
+                <image src="https://www.dermoeczamarket.com/Uploads/Slider/zigavus1-3.png?t=20190204114727" class="slideshow_img1"></image>
+                <image src="https://www.dermoeczamarket.com/Uploads/Slider/zigavus2-4.png?t=20190204130703" class="slideshow_img2"></image>
+            </a>
+
+            <image class="img1" src="previous (1).png"></image>
+            <image class="img2" src="previous.png"></image>
+
+        </div>
+
+        <div id="divOzelIcerik">
+            <a href='dermoeczamarket.html'>
+                <image src="https://www.dermoeczamarket.com/Uploads/EditorUploads/BEBEK%20%C3%9CR%C3%9CNLER%C4%B0.png" class="bebekurunleri_img"></image>
+            </a>
+
+            <a href='dermoeczamarket.html'>
+                <image src="https://www.dermoeczamarket.com/Uploads/EditorUploads/ANNE%20%C3%9CR%C3%9CNLER%C4%B0.png" class="anneurunleri_img"></image>
+            </a>
+        </div>
+
+    </div>
+
+    <li class="li0">
+        <div class="kategoriadi">
+            <h class=kategoriAdi>EN ÇOK SATANLAR</h>
+
+            <div id="slide">
+
+                <div class="urun1s">
+                    <p class="p1s"> Yeni</p>
+                    <p class="p2s"> Fırsat Ürünü</p>
+
+                    <div id="urun1s_resim">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image class= "urun1s_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/plusmed-pm-gt01-temassiz-ates-olcer-ceb4.jpg" ></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun1s_sepet">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="cart.png" class= "urun1s_sepet"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun1s_favori">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="heart.png" class= "urun1s_favori"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun1s_incele">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="search_pink.png" class= "urun1s_incele"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun1s">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html' class="urun1s_isim">PLUSMED PM-GT01 TEMASSIZ ATEŞ ÖL...</a>
+                            </span>
+                    </div>
+
+                    <p class="urun1s_p">8699349139377</p>
+
+                    <p class="urun1s_fiyat">₺140,00</p>
+
+                </div>
+
+                <div class="urun2s">
+                    <p class="p3s"> Yeni</p>
+                    <p class="p4s"> Fırsat Ürünü</p>
+
+                    <div id="urun2s_resim">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image class= "urun2s_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/plusmed-pm-sw201-steril-yuz-maskesi-50-a-7afd.jpg" ></image>
+                                </a>
+                            /<span>
+                        </div>
+
+                        <div id="urun2s_sepet">
+                            <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="cart.png" class= "urun2s_sepet"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun2s_favori">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="heart.png" class= "urun2s_favori"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun2s_incele">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="search_pink.png" class= "urun2s_incele"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun2s">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html' class="urun2s_isim">PLUSMED PM-SW201 STERİL YÜZ MAS...</a>
+                            </span>
+                    </div>
+
+                    <p class="urun2s_p">8699349139360</p>
+
+                    <p class="urun2s_fiyat">₺13,00</p>
+
+                </div>
+
+                <div class="urun3s">
+                    <p class="p5s"> Yeni</p>
+                    <p class="p6s"> Fırsat Ürünü</p>
+
+                    <div id="urun3s_resim">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image class= "urun3s_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/plusmed-pm-wch-tekerlekli-sandalye-ee4b.jpg" ></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun3s_sepet">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="cart.png" class= "urun3s_sepet"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun3s_favori">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="heart.png" class= "urun3s_favori"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun3s_incele">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="search_pink.png" class= "urun3s_incele"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun3s">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html' class="urun3s_isim">Plusmed pm-wch Tekerlekli Sandal...</a>
+                            </span>
+                    </div>
+
+                    <p class="urun3s_p">8699349139919</p>
+
+                    <p class="urun3s_fiyat">₺450,00</p>
+
+                </div>
+
+                <div class="urun4s">
+                    <p class="p7s"> Yeni</p>
+                    <p class="p8s"> Fırsat Ürünü</p>
+
+                    <div id="urun4s_resim">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image class= "urun4s_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/plusmed-sicak-soguk-kompres-1fcb.jpeg" ></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun4s_sepet">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="cart.png" class= "urun4s_sepet"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun4s_favori">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="heart.png" class= "urun4s_favori"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun4s_incele">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html'>
+                                    <image src="search_pink.png" class= "urun4s_incele"></image>
+                                </a>
+                            </span>
+                    </div>
+
+                    <div id="urun4s">
+                        <span v-bind:title="message">
+                                <a href='dermoeczamarket.html' class="urun4s_isim">PLUSMED SICAK SOĞUK KOMPRES</a>
+                            </span>
+                    </div>
+
+                    <p class="urun4s_p">8699349138165</p>
+
+                    <p class="urun4s_fiyat">₺14,50</p>
+
+                    <image class="img3" src="previous (2).png"></image>
+                    <image class="img4" src="previous (3).png"></image>
+
+                </div>
+
+            </div>
+
+        </div>
+    </li>
+
+    <div class="urunler">
+        <h class=markalar>MARKALAR </h>
+
+        <div class="urun1">
+            <p class="p1"> Yeni</p>
+            <p class="p2"> Fırsat Ürünü</p>
+
+            <div id="urun1_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun1_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/zigavus-forte-3-al-2-ode-kuru-ve-normal--e00e.jpg" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun1_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun1_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun1_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun1_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun1_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun1_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun1">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun1_isim">ZİGAVUS FORTE 3 AL 2 ÖDE KURU VE NO...</a>
+                    </span>
+            </div>
+
+            <p class="urun1_p">8699349139377</p>
+
+            <p class="urun1_fiyat">₺60,00</p>
+
+        </div>
+
+        <div class="urun2">
+            <p class="p3"> Yeni</p>
+            <p class="p4"> Fırsat Ürünü</p>
+
+            <div id="urun2_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun2_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/zigavus-forte-3-al-2-ode-yagli-saclar-ic-97dc.jpg" ></image>
+                        </a>
+                    /<span>
+                </div>
+
+                <div id="urun2_sepet">
+                    <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun2_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun2_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun2_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun2_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun2_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun2">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun2_isim">ZİGAVUS FORTE 3 AL 2 ÖDE YAĞLI SAÇLA...</a>
+                    </span>
+            </div>
+
+            <p class="urun2_p">8699349139360</p>
+
+            <p class="urun2_fiyat">₺60,00</p>
+
+        </div>
+
+        <div class="urun3">
+            <p class="p5"> Yeni</p>
+            <p class="p6"> Fırsat Ürünü</p>
+
+            <div id="urun3_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun3_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/zigavus-extra-plus-sarimsak-ozlu-3-al-2--24ca.jpg" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun3_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun3_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun3_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun3_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun3_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun3_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun3">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun3_isim">ZİGAVUS EXTRA PLUS SARIMSAK ÖZLÜ 3...</a>
+                    </span>
+            </div>
+
+            <p class="urun3_p">8699349139919</p>
+
+            <p class="urun3_fiyat">₺50,00</p>
+
+        </div>
+
+        <div class="urun4">
+            <p class="p7"> Yeni</p>
+            <p class="p8"> Fırsat Ürünü</p>
+
+            <div id="urun4_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun4_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/zigavus-medicade-hassas-sac-deri-sampuan-a799.jpg" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun4_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun4_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun4_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun4_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun4_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun4_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun4">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun4_isim">ZİGAVUS MEDİCADE+ HASSAS SAÇ DERİ...</a>
+                    </span>
+            </div>
+
+            <p class="urun4_p">8699349138165</p>
+
+            <p class="urun4_fiyat">₺30,00</p>
+
+        </div>
+
+        <div class="urun5">
+            <p class="p9"> Yeni</p>
+            <p class="p10"> Fırsat Ürünü</p>
+
+            <div id="urun5_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun5_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/vivocare-smilky-gogus-pompasi-1cdd.jpg" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun5_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun5_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun5_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun5_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun5_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun5_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun5">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun5_isim">VİVOCARE SMILKY GÖĞÜS POMPASI</a>
+                    </span>
+            </div>
+
+            <p class="urun5_p">8698864007666</p>
+
+            <p class="urun5_fiyat">₺190,00</p>
+
+        </div>
+
+        <div class="urun6">
+            <p class="p11"> Yeni</p>
+            <p class="p12"> Fırsat Ürünü</p>
+
+            <div id="urun6_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun6_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/dalin-sampuan-1000-ml-a9ec.jpg" ></image>
+                        </a>
+                    /<span>
+                </div>
+
+                <div id="urun6_sepet">
+                    <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun6_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun6_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun6_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun6_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun6_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun6">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun6_isim">DALİN ŞAMPUAN 1000 ML</a>
+                    </span>
+            </div>
+
+            <p class="urun6_p">8690605661311</p>
+
+            <p class="urun6_fiyat">₺17,00</p>
+
+        </div>
+
+        <div class="urun7">
+            <p class="p13"> Yeni</p>
+            <p class="p14"> Fırsat Ürünü</p>
+
+            <div id="urun7_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun7_img"  src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/dalin-bebek-bakim-seti-9a5d.jpg"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun7_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun7_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun7_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun7_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun7_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun7_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun7">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun7_isim">DALİN BEBEK BAKIM SETİ</a>
+                    </span>
+            </div>
+
+            <p class="urun7_p">8690605156732</p>
+
+            <p class="urun7_fiyat">₺55,00</p>
+
+        </div>
+
+        <div class="urun8">
+            <p class="p15"> Yeni</p>
+            <p class="p16"> Fırsat Ürünü</p>
+
+            <div id="urun8_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun8_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/johnsons-baby-losyon-300-ml-a91d.jpg" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun8_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun8_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun8_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun8_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun8_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun8_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun8">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun8_isim">JOHNSONS BABY LOSYON 300 ML</a>
+                    </span>
+            </div>
+
+            <p class="urun8_p">3574660421149</p>
+
+            <p class="urun8_fiyat">₺23,00</p>
+
+        </div>
+
+        <div class="urun9">
+            <p class="p17"> Yeni</p>
+            <p class="p18"> Fırsat Ürünü</p>
+
+            <div id="urun9_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun9_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/johsnsons-bebe-bedtime-losyon-300-ml-5687.jpg" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun9_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun9_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun9_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun9_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun9_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun9_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun9">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun9_isim">JOHSNSONS BEBE BEDTİME LOSYON 300...</a>
+                    </span>
+            </div>
+
+            <p class="urun9_p">3574660358643</p>
+
+            <p class="urun9_fiyat">₺23,00</p>
+
+        </div>
+
+        <div class="urun10">
+            <p class="p19"> Yeni</p>
+            <p class="p20"> Fırsat Ürünü</p>
+
+            <div id="urun10_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun10_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/evomere-bebe-nemlendirici-yag-7478.jpg" ></image>
+                        </a>
+                    /<span>
+                </div>
+
+                <div id="urun10_sepet">
+                    <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun10_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun10_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun10_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun10_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun10_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun10">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun10_isim">EVOMERE BEBE NEMLENDİRİCİ YAĞ...</a>
+                    </span>
+            </div>
+
+            <p class="urun10_p">8680835000257</p>
+
+            <p class="urun10_fiyat">₺26,00</p>
+
+        </div>
+
+        <div class="urun11">
+            <p class="p21"> Yeni</p>
+            <p class="p22"> Fırsat Ürünü</p>
+
+            <div id="urun11_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun11_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/dalin-islak-havlu-3lu-avantaj-paket-ebdd.png" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun11_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun11_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun11_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun11_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun11_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun11_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun11">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun11_isim">DALİN ISLAK HAVLU 3LÜ AVANTAJ PAKET</a>
+                    </span>
+            </div>
+
+            <p class="urun11_p">8690605034436</p>
+
+            <p class="urun11_fiyat">₺13,50</p>
+
+        </div>
+
+        <div class="urun12">
+            <p class="p23"> Yeni</p>
+            <p class="p24"> Fırsat Ürünü</p>
+
+            <div id="urun12_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun12_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/hipp-ultra-sensitive-yenidogan-temizlik--aaa9.jpg" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun12_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun12_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun12_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun12_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun12_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun12_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun12">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun12_isim">HİPP ULTRA SENSITIVE YENIDOGAN TEMİ...</a>
+                    </span>
+            </div>
+
+            <p class="urun12_p">4062300322226</p>
+
+            <p class="urun12_fiyat">₺18,00</p>
+
+        </div>
+
+        <div class="urun13">
+            <p class="p25"> Yeni</p>
+            <p class="p26"> Fırsat Ürünü</p>
+
+            <div id="urun13_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun13_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/hipp-temizlik-ve-bakim-mendili-3-x-56li-0ffe.jpg" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun13_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun13_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun13_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun13_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun13_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun13_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun13">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun13_isim">HİPP TEMİZLİK VE BAKIM MENDİLİ 3 x 56LI</a>
+                    </span>
+            </div>
+
+            <p class="urun13_p">4062300322219</p>
+
+            <p class="urun13_fiyat">₺18,00</p>
+
+        </div>
+
+        <div class="urun14">
+            <p class="p27"> Yeni</p>
+            <p class="p28"> Fırsat Ürünü</p>
+
+            <div id="urun14_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun14_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/uni-wipes-islak-bebek-havlu-c27a.jpg" ></image>
+                        </a>
+                    /<span>
+                </div>
+
+                <div id="urun14_sepet">
+                    <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun14_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun14_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun14_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun14_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun14_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun14">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun14_isim">UNİ WİPES ISLAK BEBEK HAVLU</a>
+                    </span>
+            </div>
+
+            <p class="urun14_p">8692190000698</p>
+
+            <p class="urun14_fiyat">₺7,00</p>
+
+        </div>
+
+        <div class="urun15">
+            <p class="p29"> Yeni</p>
+            <p class="p30"> Fırsat Ürünü</p>
+
+            <div id="urun15_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun15_img"  src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/sensodyne-f-100-ml-fef6.jpg"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun15_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun15_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun15_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun15_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun15_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun15_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun15">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun15_isim">SENSODYNE F-100 ML</a>
+                    </span>
+            </div>
+
+            <p class="urun15_p">8699543630090</p>
+
+            <p class="urun15_fiyat">₺15,00</p>
+
+        </div>
+
+        <div class="urun16">
+            <p class="p31"> Yeni</p>
+            <p class="p32"> Fırsat Ürünü</p>
+
+            <div id="urun16_resim">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image class= "urun16_img" src="https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/ipana-3d-white-75-ml-faf9.jpg" ></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun16_sepet">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="cart.png" class= "urun16_sepet"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun16_favori">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="heart.png" class= "urun16_favori"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun16_incele">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html'>
+                            <image src="search_pink.png" class= "urun16_incele"></image>
+                        </a>
+                    </span>
+            </div>
+
+            <div id="urun16">
+                <span v-bind:title="message">
+                        <a href='dermoeczamarket.html' class="urun16_isim">İPANA 3D WHITE 75 ML</a>
+                    </span>
+            </div>
+
+            <p class="urun16_p">8001090128713</p>
+
+            <p class="urun16_fiyat">₺11,00</p>
+
+        </div>
+    </div>
+
+    <div id="footer" class="homeFooter">
+        <div class="footerTop"></div>
+        <div class="footerCenter">
+            <div class="ticiFooterContent">
+                <div class="ticiFooterTop">
+                    <div class="ticiContainer">
+                        <div class="footerLogo" style="text-align: center;"></div>
+                        <div class="footerSosyalMedya">
+                            <a href="#">
+                                <image src="facebook.png" class="facebook"></image>
+                            </a>
+                            <a href="#">
+                                <image src="twitter.png" class="twitter"></image>
+                            </a>
+                            <a href="#">
+                                <image src="instagram.png" class="instagram"></image>
+                            </a>
+                            <a href="#">
+                                <image src="google-plus.png" class="google-plus"></image>
+                            </a>
+                            <a href="#">
+                                <image src="linkedin.png" class="linkedin"></image>
+                            </a>
+                            <a href="#">
+                                <image src="youtube.png" class="youtube"></image>
+                            </a>
+                            <a href="#">
+                                <image src="pinterest.png" class="pinterest"></image>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticiFooterCenter">
+                    <div class="ticiContainer">
+                        <div class="ticiFooterMenu footerRow">
+                            <div class="footerCol f-col-3">
+                                <div class="fmenu-wrap">
+                                    <h3>Kurumsal</h3>
+                                    <ul class="List">
+                                        <li class="Item"><a class="Link" href="">Anasayfa</a></li>
+                                        <li class="Item"><a class="Link" href="">Hakkımızda</a></li>
+                                        <li class="Item"><a class="Link" href="">Mağazalarımız</a></li>
+                                        <li class="Item"><a class="Link" href="">Bize Ulaşın</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-3">
+                                <div class="fmenu-wrap">
+                                    <h3>Müşteri İlişkileri</h3>
+                                    <ul class="List">
+                                        <li class="Item"><a href="dermoeczamarket.html">Üyelik</a></li>
+                                        <li class="Item"><a class="Link" href="">Alışveriş</a></li>
+                                        <li class="Item"><a class="Link" href="">Kargo &amp; Teslimat</a></li>
+                                        <li class="Item"><a class="Link" href="">KVKK</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-3">
+                                <div class="fmenu-wrap">
+                                    <h3>Yardım</h3>
+                                    <ul class="List">
+                                        <li class="Item"><a class="Link" href="">Müşteri Hizmetleri</a></li>
+                                        <li class="Item"><a class="Link" href="">Sıkça Sorulan Sorular</a></li>
+                                        <li class="Item"><a class="Link" href="">Kargo Takibi</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-3">
+                                <div class="ticiBulten">
+                                    <h2>Bizden Haberler</h2>
+                                    <p>Bültenimize Üye Olun ! Tüm İndirim ve Fırsatlardan İlk Sizin Haberiniz Olsun !</p>
+                                    <div class="ticiBultenContent">
+                                        <div id="divNewsLetter" class="newaslater">
+                                            <label>E-bültenimize kayıt olun!</label>
+                                            <div id="UpdatePanel1" class="newsletterContent">
+                                                <input type="text" class="newstext textbox" name="txtbxNewsletterMail" id="txtbxNewsletterMail" placeholder="E-posta adresinizi yazın...">
+                                                <a id="btnMailKaydet" href="javascript:void(0)" class="newsbutton button" onclick="saveNewsletter()">Gönder</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticiFooterBottom">
+                    <div class="ticiContainer">
+                        <div class="footerRow">
+                            <div class="footerCol f-col-8 f-col-xs-12">
+                                <div class="ticiBankaLogo">
+                                    <img alt="" src="https://cdn.ticimax.com/Uploads/hazirSablonResimleri/footerImg/bankimg-2.png">
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-4 f-col-xs-12 fRight">
+                                <div class="ticiCopyDiv">
+                                    © 2019 <b>dermoeczamarket.com</b>&nbsp;- Tüm Hakları Saklıdır.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var Search = new Vue({
+        el: '#Search',
+        data: {
+            message: 'Arama'
+        }
+    })
+
+    var uyeGirisi = new Vue({
+        el: '#uyeGirisi',
+        data: {
+            message: 'Hesabım'
+        }
+    })
+
+    var bebekurunleri = new Vue({
+        el: '#bebekurunleri',
+        data: {
+            message: 'BEBEK ÜRÜNLERİ'
+        }
+    })
+
+    var uyeGirisi_img = new Vue({
+        el: '#uyeGirisi_img',
+        data: {
+            message: 'Hesabım'
+        }
+    })
+
+    var uyeOl = new Vue({
+        el: '#uyeOl',
+        data: {
+            message: 'Üye Ol'
+        }
+    })
+
+    var urun1 = new Vue({
+        el: '#urun1',
+        data: {
+            message: 'ZİGAVUS FORTE 3 AL 2 ÖDE KURU VE NORMAL SAÇLAR'
+        }
+    })
+
+    var urun1_resim = new Vue({
+        el: '#urun1_resim',
+        data: {
+            message: 'ZİGAVUS FORTE 3 AL 2 ÖDE KURU VE NORMAL SAÇLAR'
+        }
+    })
+
+    var urun1_sepet = new Vue({
+        el: '#urun1_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun1_favori = new Vue({
+        el: '#urun1_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun1_incele = new Vue({
+        el: '#urun1_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun2 = new Vue({
+        el: '#urun2',
+        data: {
+            message: 'ZİGAVUS FORTE 3 AL 2 ÖDE YAĞLI SAÇLAR İÇİN'
+        }
+    })
+
+    var urun2_resim = new Vue({
+        el: '#urun2_resim',
+        data: {
+            message: 'ZİGAVUS FORTE 3 AL 2 ÖDE YAĞLI SAÇLAR İÇİN'
+        }
+    })
+
+    var urun2_sepet = new Vue({
+        el: '#urun2_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun2_favori = new Vue({
+        el: '#urun2_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun2_incele = new Vue({
+        el: '#urun2_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun3 = new Vue({
+        el: '#urun3',
+        data: {
+            message: 'ZİGAVUS EXTRA PLUS SARIMSAK ÖZLÜ 3 AL 2 ÖDE'
+        }
+    })
+
+    var urun3_resim = new Vue({
+        el: '#urun3_resim',
+        data: {
+            message: 'ZİGAVUS EXTRA PLUS SARIMSAK ÖZLÜ 3 AL 2 ÖDE'
+        }
+    })
+
+    var urun3_sepet = new Vue({
+        el: '#urun3_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun3_favori = new Vue({
+        el: '#urun3_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun3_incele = new Vue({
+        el: '#urun3_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun4 = new Vue({
+        el: '#urun4',
+        data: {
+            message: 'ZİGAVUS MEDİCADE+ HASSAS SAÇ DERİ ŞAMPUANI 250 ML'
+        }
+    })
+
+    var urun4_resim = new Vue({
+        el: '#urun4_resim',
+        data: {
+            message: 'ZİGAVUS MEDİCADE+ HASSAS SAÇ DERİ ŞAMPUANI 250 ML'
+        }
+    })
+
+    var urun4_sepet = new Vue({
+        el: '#urun4_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun4_favori = new Vue({
+        el: '#urun4_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun4_incele = new Vue({
+        el: '#urun4_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun5 = new Vue({
+        el: '#urun5',
+        data: {
+            message: 'VİVOCARE SMILKY GÖĞÜS POMPASI'
+        }
+    })
+
+    var urun5_resim = new Vue({
+        el: '#urun5_resim',
+        data: {
+            message: 'VİVOCARE SMILKY GÖĞÜS POMPASI'
+        }
+    })
+
+    var urun5_sepet = new Vue({
+        el: '#urun5_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun5_favori = new Vue({
+        el: '#urun5_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun5_incele = new Vue({
+        el: '#urun5_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun6 = new Vue({
+        el: '#urun6',
+        data: {
+            message: 'DALİN ŞAMPUAN 1000 ML'
+        }
+    })
+
+    var urun6_resim = new Vue({
+        el: '#urun6_resim',
+        data: {
+            message: 'DALİN ŞAMPUAN 1000 ML'
+        }
+    })
+
+    var urun6_sepet = new Vue({
+        el: '#urun6_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun6_favori = new Vue({
+        el: '#urun6_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun6_incele = new Vue({
+        el: '#urun6_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun7 = new Vue({
+        el: '#urun7',
+        data: {
+            message: 'DALİN BEBEK BAKIM SETİ'
+        }
+    })
+
+    var urun7_resim = new Vue({
+        el: '#urun7_resim',
+        data: {
+            message: 'DALİN BEBEK BAKIM SETİ'
+        }
+    })
+
+    var urun7_sepet = new Vue({
+        el: '#urun7_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun7_favori = new Vue({
+        el: '#urun7_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun7_incele = new Vue({
+        el: '#urun7_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun8 = new Vue({
+        el: '#urun8',
+        data: {
+            message: 'JOHNSONS BABY LOSYON 300 ML'
+        }
+    })
+
+    var urun8_resim = new Vue({
+        el: '#urun8_resim',
+        data: {
+            message: 'JOHNSONS BABY LOSYON 300 ML'
+        }
+    })
+
+    var urun8_sepet = new Vue({
+        el: '#urun8_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun8_favori = new Vue({
+        el: '#urun8_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun8_incele = new Vue({
+        el: '#urun8_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun9 = new Vue({
+        el: '#urun9',
+        data: {
+            message: 'JOHSNSONS BEBE BEDTİME LOSYON 300 ML'
+        }
+    })
+
+    var urun9_resim = new Vue({
+        el: '#urun9_resim',
+        data: {
+            message: 'JOHSNSONS BEBE BEDTİME LOSYON 300 ML'
+        }
+    })
+
+    var urun9_sepet = new Vue({
+        el: '#urun9_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun9_favori = new Vue({
+        el: '#urun9_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun9_incele = new Vue({
+        el: '#urun9_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun10 = new Vue({
+        el: '#urun10',
+        data: {
+            message: 'EVOMERE BEBE NEMLENDİRİCİ YAĞ'
+        }
+    })
+
+    var urun10_resim = new Vue({
+        el: '#urun10_resim',
+        data: {
+            message: 'EVOMERE BEBE NEMLENDİRİCİ YAĞ'
+        }
+    })
+
+    var urun10_sepet = new Vue({
+        el: '#urun10_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun10_favori = new Vue({
+        el: '#urun10_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun10_incele = new Vue({
+        el: '#urun10_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun11 = new Vue({
+        el: '#urun11',
+        data: {
+            message: 'DALİN ISLAK HAVLU 3LÜ AVANTAJ PAKET'
+        }
+    })
+
+    var urun11_resim = new Vue({
+        el: '#urun11_resim',
+        data: {
+            message: 'DALİN ISLAK HAVLU 3LÜ AVANTAJ PAKET'
+        }
+    })
+
+    var urun11_sepet = new Vue({
+        el: '#urun11_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun11_favori = new Vue({
+        el: '#urun11_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun11_incele = new Vue({
+        el: '#urun11_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun12 = new Vue({
+        el: '#urun12',
+        data: {
+            message: 'HİPP ULTRA SENSITIVE YENIDOGAN TEMİZLİK MENDİLİ 3X52Lİ'
+        }
+    })
+
+    var urun12_resim = new Vue({
+        el: '#urun12_resim',
+        data: {
+            message: 'HİPP ULTRA SENSITIVE YENIDOGAN TEMİZLİK MENDİLİ 3X52Lİ'
+        }
+    })
+
+    var urun12_sepet = new Vue({
+        el: '#urun12_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun12_favori = new Vue({
+        el: '#urun12_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun12_incele = new Vue({
+        el: '#urun12_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun13 = new Vue({
+        el: '#urun13',
+        data: {
+            message: 'HİPP TEMİZLİK VE BAKIM MENDİLİ 3 x 56LI'
+        }
+    })
+
+    var urun13_resim = new Vue({
+        el: '#urun13_resim',
+        data: {
+            message: 'HİPP TEMİZLİK VE BAKIM MENDİLİ 3 x 56LI'
+        }
+    })
+
+    var urun13_sepet = new Vue({
+        el: '#urun13_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun13_favori = new Vue({
+        el: '#urun13_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun13_incele = new Vue({
+        el: '#urun13_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun14 = new Vue({
+        el: '#urun14',
+        data: {
+            message: 'UNİ WİPES ISLAK BEBEK HAVLU'
+        }
+    })
+
+    var urun14_resim = new Vue({
+        el: '#urun14_resim',
+        data: {
+            message: 'UNİ WİPES ISLAK BEBEK HAVLU'
+        }
+    })
+
+    var urun14_sepet = new Vue({
+        el: '#urun14_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun14_favori = new Vue({
+        el: '#urun14_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun14_incele = new Vue({
+        el: '#urun14_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun15 = new Vue({
+        el: '#urun15',
+        data: {
+            message: 'SENSODYNE F-100 ML'
+        }
+    })
+
+    var urun15_resim = new Vue({
+        el: '#urun15_resim',
+        data: {
+            message: 'SENSODYNE F-100 ML'
+        }
+    })
+
+    var urun15_sepet = new Vue({
+        el: '#urun15_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun15_favori = new Vue({
+        el: '#urun15_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun15_incele = new Vue({
+        el: '#urun15_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun16 = new Vue({
+        el: '#urun16',
+        data: {
+            message: 'İPANA 3D WHITE 75 ML'
+        }
+    })
+
+    var urun16_resim = new Vue({
+        el: '#urun16_resim',
+        data: {
+            message: 'İPANA 3D WHITE 75 ML'
+        }
+    })
+
+    var urun16_sepet = new Vue({
+        el: '#urun16_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun16_favori = new Vue({
+        el: '#urun16_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun16_incele = new Vue({
+        el: '#urun16_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun1s = new Vue({
+        el: '#urun1s',
+        data: {
+            message: 'ZİGAVUS FORTE 3 AL 2 ÖDE KURU VE NORMAL SAÇLAR'
+        }
+    })
+
+    var urun1s_resim = new Vue({
+        el: '#urun1s_resim',
+        data: {
+            message: 'ZİGAVUS FORTE 3 AL 2 ÖDE KURU VE NORMAL SAÇLAR'
+        }
+    })
+
+    var urun1s_sepet = new Vue({
+        el: '#urun1s_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun1s_favori = new Vue({
+        el: '#urun1s_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun1s_incele = new Vue({
+        el: '#urun1s_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun2s = new Vue({
+        el: '#urun2s',
+        data: {
+            message: 'ZİGAVUS FORTE 3 AL 2 ÖDE YAĞLI SAÇLAR İÇİN'
+        }
+    })
+
+    var urun2s_resim = new Vue({
+        el: '#urun2s_resim',
+        data: {
+            message: 'ZİGAVUS FORTE 3 AL 2 ÖDE YAĞLI SAÇLAR İÇİN'
+        }
+    })
+
+    var urun2s_sepet = new Vue({
+        el: '#urun2s_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun2s_favori = new Vue({
+        el: '#urun2s_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun2s_incele = new Vue({
+        el: '#urun2s_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun3s = new Vue({
+        el: '#urun3s',
+        data: {
+            message: 'ZİGAVUS EXTRA PLUS SARIMSAK ÖZLÜ 3 AL 2 ÖDE'
+        }
+    })
+
+    var urun3s_resim = new Vue({
+        el: '#urun3s_resim',
+        data: {
+            message: 'ZİGAVUS EXTRA PLUS SARIMSAK ÖZLÜ 3 AL 2 ÖDE'
+        }
+    })
+
+    var urun3s_sepet = new Vue({
+        el: '#urun3s_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun3s_favori = new Vue({
+        el: '#urun3s_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun3s_incele = new Vue({
+        el: '#urun3s_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+
+    var urun4s = new Vue({
+        el: '#urun4s',
+        data: {
+            message: 'ZİGAVUS MEDİCADE+ HASSAS SAÇ DERİ ŞAMPUANI 250 ML'
+        }
+    })
+
+    var urun4s_resim = new Vue({
+        el: '#urun4s_resim',
+        data: {
+            message: 'ZİGAVUS MEDİCADE+ HASSAS SAÇ DERİ ŞAMPUANI 250 ML'
+        }
+    })
+
+    var urun4s_sepet = new Vue({
+        el: '#urun4s_sepet',
+        data: {
+            message: 'Sepete Ekle'
+        }
+    })
+
+    var urun4s_favori = new Vue({
+        el: '#urun4s_favori',
+        data: {
+            message: 'Favorilere Ekle'
+        }
+    })
+
+    var urun4s_incele = new Vue({
+        el: '#urun4s_incele',
+        data: {
+            message: 'Ürünü İncele'
+        }
+    })
+</script>
+
+</html>
