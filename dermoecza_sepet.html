@@ -1,0 +1,241 @@
+<html>
+
+<head>
+    <title>
+        Sepetim | Dermo Ecza Market
+    </title>
+    <link rel="Shortcut Icon" href="https://www.dermoeczamarket.com/Uploads/Images/favicon.ico" type="image/x-icon">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+</head>
+
+<style>
+    A {
+        text-decoration: none;
+    }
+
+    #ul1 {
+        margin: 0px 0px 0px -40px;
+    }
+
+</style>
+<body>
+    <div id="header">
+        <a href='dermoeczamarket.html'>
+            <image src="dermologo.png" class="image1"></image>
+        </a>
+
+        <div id="SearchButton">
+            <button v-on:click="search" class="searchButton"></button>
+        </div>
+
+        <div id="Search">
+            <input v-model="message" class="searchbar">
+        </div>
+
+        <a href='dermoeczamarket.html'>
+            <image src="like.png" class="image2"></image>
+        </a>
+
+        <a href='dermoeczamarket.html'>
+            <p class="yazi1">Favorilerim</p>
+        </a>
+
+        <a href='dermoeczamarket.html'>
+            <image src="search.png" class="image3"></image>
+        </a>
+
+        <div id="uyeGirisi_img">
+            <span v-bind:title="message">
+                <image src="user.png"  class="uyeGirisi">
+            </span>
+        </div>
+
+        <div id="uyeGirisi">
+
+            <a href='dermoeczamarket.html'>
+                <span v-bind:title="message">
+                    <p class="yazi3">ÜYE GİRİŞİ</p>
+                </span>
+            </a>
+
+        </div>
+
+        <div id="uyeOl">
+            <span v-bind:title="message">
+                <a href='dermoeczamarket.html'>
+                    <p class="yazi2">| ÜYE OL</p>
+                </a>
+            </span>
+        </div>
+
+        <a href='dermoeczamarket.html'>
+            <image src="shopping-cart.png" class="image4"></image>
+            <image src="oval.png" class="image5"></image>
+            <image src="shopping-cart-outline.png" class="image6"></image>
+            <p class="shopping-cart-number">0</p>
+        </a>
+    </div>
+
+    <div class="alan">
+        <li class="li6">
+            <li class="li7">
+                <li class="li8">
+
+                    <p id="sepetbos" class="sepetbos"> Sepetinizde ürün bulunmamaktadır. </p>
+
+                    <button class="alisveris">
+                        < Alışverişe Devam et
+                    </button>
+
+                </li>
+            </li>
+        </li>
+    </div>
+
+    <div id="footer" class="homeFooter">
+        <div class="footerTop"></div>
+        <div class="footerCenter">
+            <div class="ticiFooterContent">
+                <div class="ticiFooterTop">
+                    <div class="ticiContainer">
+                        <div class="footerLogo" style="text-align: center;"></div>
+                        <div class="footerSosyalMedya">
+                            <a href="#">
+                                <image src="facebook.png" class="facebook"></image>
+                            </a>
+                            <a href="#">
+                                <image src="twitter.png" class="twitter"></image>
+                            </a>
+                            <a href="#">
+                                <image src="instagram.png" class="instagram"></image>
+                            </a>
+                            <a href="#">
+                                <image src="google-plus.png" class="google-plus"></image>
+                            </a>
+                            <a href="#">
+                                <image src="linkedin.png" class="linkedin"></image>
+                            </a>
+                            <a href="#">
+                                <image src="youtube.png" class="youtube"></image>
+                            </a>
+                            <a href="#">
+                                <image src="pinterest.png" class="pinterest"></image>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticiFooterCenter">
+                    <div class="ticiContainer">
+                        <div class="ticiFooterMenu footerRow">
+                            <div class="footerCol f-col-3">
+                                <div class="fmenu-wrap">
+                                    <h3>Kurumsal</h3>
+                                    <ul class="List">
+                                        <li class="Item"><a class="Link" href="">Anasayfa</a></li>
+                                        <li class="Item"><a class="Link" href="">Hakkımızda</a></li>
+                                        <li class="Item"><a class="Link" href="">Mağazalarımız</a></li>
+                                        <li class="Item"><a class="Link" href="">Bize Ulaşın</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-3">
+                                <div class="fmenu-wrap">
+                                    <h3>Müşteri İlişkileri</h3>
+                                    <ul class="List">
+                                        <li class="Item"><a href="dermoeczamarket.html">Üyelik</a></li>
+                                        <li class="Item"><a class="Link" href="">Alışveriş</a></li>
+                                        <li class="Item"><a class="Link" href="">Kargo &amp; Teslimat</a></li>
+                                        <li class="Item"><a class="Link" href="">KVKK</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-3">
+                                <div class="fmenu-wrap">
+                                    <h3>Yardım</h3>
+                                    <ul class="List">
+                                        <li class="Item"><a class="Link" href="">Müşteri Hizmetleri</a></li>
+                                        <li class="Item"><a class="Link" href="">Sıkça Sorulan Sorular</a></li>
+                                        <li class="Item"><a class="Link" href="">Kargo Takibi</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-3">
+                                <div class="ticiBulten">
+                                    <h2>Bizden Haberler</h2>
+                                    <p>Bültenimize Üye Olun ! Tüm İndirim ve Fırsatlardan İlk Sizin Haberiniz Olsun !</p>
+                                    <div class="ticiBultenContent">
+                                        <div id="divNewsLetter" class="newaslater">
+                                            <label>E-bültenimize kayıt olun!</label>
+                                            <div id="UpdatePanel1" class="newsletterContent">
+                                                <input type="text" class="newstext textbox" name="txtbxNewsletterMail" id="txtbxNewsletterMail" placeholder="E-posta adresinizi yazın...">
+                                                <a id="btnMailKaydet" href="javascript:void(0)" class="newsbutton button" onclick="saveNewsletter()">Gönder</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticiFooterBottom">
+                    <div class="ticiContainer">
+                        <div class="footerRow">
+                            <div class="footerCol f-col-8 f-col-xs-12">
+                                <div class="ticiBankaLogo">
+                                    <img alt="" src="https://cdn.ticimax.com/Uploads/hazirSablonResimleri/footerImg/bankimg-2.png">
+                                </div>
+                            </div>
+                            <div class="footerCol f-col-4 f-col-xs-12 fRight">
+                                <div class="ticiCopyDiv">
+                                    © 2019 <b>dermoeczamarket.com</b>&nbsp;- Tüm Hakları Saklıdır.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var Search = new Vue({
+        el: '#Search',
+        data: {
+            message: 'Arama'
+        }
+    })
+
+    var uyeGirisi = new Vue({
+        el: '#uyeGirisi',
+        data: {
+            message: 'Hesabım'
+        }
+    })
+
+    var uyeGirisi_img = new Vue({
+        el: '#uyeGirisi_img',
+        data: {
+            message: 'Hesabım'
+        }
+    })
+
+    var uyeOl = new Vue({
+        el: '#uyeOl',
+        data: {
+            message: 'Üye Ol'
+        }
+    })
+    
+    var Search = new Vue({
+        el: '#Search',
+        data: {
+            message: 'Arama'
+        }
+    })
+</script>
