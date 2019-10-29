@@ -68,7 +68,7 @@
 }
 
 .nav1 {
-    background: #5C535D;
+    background: #5c535d;
     height: 50px;
     margin: 150px 0px 0px 0px;
 }
@@ -78,12 +78,16 @@
 }
 
 .li1 {
-    height: 25px;
-    background: #F776C4;
+    height: 30px;
+    background: #ec95a3;
     border: none;
     color: white;
     font: bold;
     padding-top: 15px;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+    width: 230px;
 }
 
 .kategoriler {
@@ -102,6 +106,7 @@
     color: black;
     font-size: 14;
     padding: 10px;
+    
 }
 
 .ul1 {
@@ -122,13 +127,13 @@
     border-top-width: 0;
     border-bottom-width: 0;
     border-right-width: 0;
-    border-left-color: #F776C4;
+    border-left-color: #ec95a3;
     position: absolute;
     visibility: hidden;
 }
 
 .a1:hover {
-    color: #F776C4;
+    color: #ec95a3;
 }
 
 .a1:hover + .konum1 {
@@ -136,7 +141,7 @@
 }
 
 .a2:hover {
-    color: #F776C4;
+    color: #ec95a3;
 }
 
 .konum2 {
@@ -146,7 +151,7 @@
     border-top-width: 0;
     border-bottom-width: 0;
     border-right-width: 0;
-    border-left-color: #F776C4;
+    border-left-color: #ec95a3;
     position: absolute;
     visibility: hidden;
 }
@@ -158,7 +163,7 @@
     border-top-width: 0;
     border-bottom-width: 0;
     border-right-width: 0;
-    border-left-color: #F776C4;
+    border-left-color: #ec95a3;
     position: absolute;
     visibility: hidden;
 }
@@ -170,7 +175,7 @@
     border-top-width: 0;
     border-bottom-width: 0;
     border-right-width: 0;
-    border-left-color: #F776C4;
+    border-left-color: #ec95a3;
     position: absolute;
     visibility: hidden;
 }
@@ -182,7 +187,7 @@
     border-top-width: 0;
     border-bottom-width: 0;
     border-right-width: 0;
-    border-left-color: #F776C4;
+    border-left-color: #ec95a3;
     position: absolute;
     visibility: hidden;
 }
@@ -190,6 +195,23 @@
 .li2 {
     border-top-width: 0;
     border-bottom-width: 0;
+    border-width: 1px;
+    border-color: #EEEEEE;
+    color: black;
+    border-style: solid;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+}
+
+.li3 {
+    border-width: 1px;
+    border-color: #EEEEEE;
+    color: black;
+    border-style: solid;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
 }
 
 .konum6 {
@@ -199,7 +221,7 @@
     border-top-width: 0;
     border-bottom-width: 0;
     border-right-width: 0;
-    border-left-color: #F776C4;
+    border-left-color: #ec95a3;
     position: absolute;
     visibility: hidden;
 }
@@ -211,7 +233,7 @@
     border-top-width: 0;
     border-bottom-width: 0;
     border-right-width: 0;
-    border-left-color: #F776C4;
+    border-left-color: #ec95a3;
     position: absolute;
     visibility: hidden;
 }
@@ -223,7 +245,7 @@
     border-top-width: 0;
     border-bottom-width: 0;
     border-right-width: 0;
-    border-left-color: #F776C4;
+    border-left-color: #ec95a3;
     position: absolute;
     visibility: hidden;
 }
@@ -382,6 +404,7 @@
     width: 1250px;
     height: 630px;
     margin: 800px 200px 0px 120px;
+    list-style-type: none;
 }
 
 .kategoriadi {
@@ -2047,6 +2070,8 @@
     padding: 0
 }
 
+
+
 @media (max-width:768px) {
     .ticiFooterContent {
         margin: 0 15px
@@ -2087,6 +2112,7 @@
     .ticiFooterContent .ticiFooterMenu .footerCol:last-child .fmenu-wrap {
         margin-bottom: 0
     }
+
     .ticiFooterContent .ticiFooterMenu .footerCol h3 {
         line-height: 30px;
         position: relative;
@@ -2122,7 +2148,7 @@
         text-align: left;
         display: block;
         padding-left: 10px;
-        line-height: 20px
+        line-height: 20px;
     }
     .ticiFooterContent .ticiFooterMenu .footerCol.active ul.List {
         display: block
@@ -2153,4 +2179,656 @@
 .img4{
     margin: -285px 0px 0px 1150px;
     position:absolute;
+}
+
+/*  */
+.li4{
+    margin: 30px 0px 0px 160px;
+    height: 385px;
+    width: 530px;
+    border-width: 1px;
+    border-color: #EEEEEE;
+    color: black;
+    border-style: solid;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+}
+
+.h1{
+    font-weight: normal;
+    font-size : 25;
+    margin: 25px 0px 0px 25px;
+}
+
+.girisInput{
+    width: 485px;
+    margin: 15px 0px 0px 25px;
+    height: 50px;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.girisbtn{
+    margin: 25px 0px 0px 25px;
+    height: 50px;
+    width: 485px;
+    background: #ec95a3;
+    border: none;
+    border-color: #ec95a3;
+    color: white;
+}
+
+.girisbtn:hover{
+    background: #333;
+    cursor: pointer;
+}
+
+.üyeolbtn{
+    margin: 10px 0px 0px 25px;
+    height: 50px;
+    width: 485px;
+    background: white;
+    border: solid;
+    border-color: #666;
+    border-width: 1px;
+    color: black;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.üyeolbtn:hover{
+    background: black;
+    cursor: pointer;
+    color: white;
+}
+
+.girisInput:focus{
+    background: #F1F1F1;
+    outline:none;
+}
+
+.sifremiunuttum{
+    margin: 0px 0px 0px 400px;
+    text-decoration: underline;
+    color: #434141;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.li5{
+    margin: -408px 0px 0px 770px;
+    width: 530px;
+    border-width: 1px;
+    border-color: #EEEEEE;
+    color: black;
+    border-style: solid;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+}
+
+.telefon{
+    width: 415px;
+    margin: -40px 0px 0px 95px;
+    height: 40px;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    border-left-width:0;
+}
+
+.telefon:focus{
+    background: #F1F1F1;
+    outline:none;
+}
+
+.ulkeler3{
+    margin: 15px 0px 0px 25px;
+    width: 70;
+    height: 40;
+    border-right-width: 0;
+    border-color: lightgray;
+}
+.ulkeler3:hover{
+    background: #F1F1F1;
+    outline: none;
+}
+.ulkeler3:focus{
+    outline:none;
+}
+
+.checkbox{
+    font-size: 13px;
+    cursor: context-menu;
+}
+.checkboxrm{
+    margin: 0px 0px 0px 24px;
+    font-size: 13px;
+    cursor: context-menu;cursor: pointer;
+}
+
+.checkboxp1{
+    margin: 15px 0px 0px 13px;
+    font-size: 13px;
+    cursor: context-menu;
+}
+.checkboxp2{
+    margin: 5px 0px 0px 13px;
+    font-size: 13px;
+    cursor: context-menu;
+}
+.checkboxp3{
+    margin: 5px 0px 0px 13px    ;
+    font-size: 13px;
+    cursor: context-menu;
+}
+
+.li6{
+    background: #E9E9E9;
+    margin: 150px 0px 0px 0px;
+    border-width: 1px;
+    border-color: #EEEEEE;
+    color: black;
+    border-style: solid;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+    height: 250px;
+}
+
+.li7 {
+    background: white;
+    margin: -250px 0px 0px 140px;
+    border-width: 1px;
+    border-color: white;
+    color: black;
+    border-style: solid;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+    width: 1200px;
+    height: 130px;
+}
+
+
+.li8 {
+    background: #E9E9E9;
+    margin: -135px 0px 0px 165px;
+    border-width: 1px;
+    border-color: #E9E9E9;
+    color: black;
+    border-style: solid;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+    width: 1150px;
+    height: 30px;
+}
+
+.alan{
+    height: 210px;
+}
+
+.sepetbos{
+    text-align: center;
+    font-size: 18;
+    margin-top: 5px;
+}
+
+.alisveris{
+    margin: 20px 0px 0px -10px;
+    height: 40px;
+    width: 220px;
+    background: white;
+    border: solid;
+    border-color: #E9E9E9;
+    border-width: 1px;
+    color: black;
+    opacity: 0.5;
+    font-size: 17;
+    text-align: center;
+}
+
+.alisveris:hover{
+    background: red;
+    color: white;
+    cursor:pointer;
+}
+
+.red{
+    color:red;
+    cursor: pointer;
+}
+
+
+/*  */
+.uyeolBaslik{
+    margin: 0px 0px 0px 680px;
+}
+
+.Adtxt{
+    margin: 50px 30px 0px 0px;
+    font-size:90%;
+    color: #444444;
+}
+.txtSol {
+    margin: 5px 30px 0px 0px;
+    width: 600;
+    height: 35;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+.txtSol:focus{
+    background: #F1F1F1;
+    outline: none;
+}
+.Soyadtxt{
+    margin: 15px 30px 0px 0px;
+    font-size:90%;
+    color:rgb(80, 80, 80)
+}
+.Emailtxt{
+    margin: 15px 30px 0px 0px;
+    font-size:90%;
+    color:rgb(80, 80, 80)
+}
+.txtEmail {
+    margin: 5px 30px 0px 0px;
+    width: 600;
+    height: 35;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+.Sifretxt{
+    margin: 15px 30px 0px 0px;
+    font-size:90%;
+    color:rgb(80, 80, 80)
+}
+.txtSifre {
+    margin: 5px 30px 0px 0px;
+    width: 600;
+    height: 35;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.redLittle{
+    margin: -1px 30px 0px 0px;
+    font-size:90%;
+    color:#d52929!important;
+}
+
+.redLittle2{
+    margin: 5px 0px 0px 0px;
+    font-size:12px;
+    font-weight: 400;
+    color:#ff0000!important;
+}
+
+.redLittleSagUst1{
+    margin: -17px 30px 0px 0px;
+    text-align: right;
+}
+.redLittleSagUst2{
+    margin: -17px 30px 0px 345px;
+    text-align: right;
+}
+.redLittleSagUst3{
+    margin: -17px 30px 0px 300px;
+    text-align: right;
+}
+.redLittleSagUst4{
+    margin: -17px 30px 0px 300px;
+    text-align: right;
+}
+.redLittleSagUst5{
+    margin: -17px 30px 0px 300px;
+    text-align: right;
+}
+.redLittleSagUst6{
+    margin: -17px 30px 0px 0px;
+    text-align: right;
+}
+
+.griArkaplan{
+    margin: 5px 30px 0px 0px;
+    color:#000!important;
+    background-color:#f1f1f1!important;
+    border-radius:3.5px;
+    width:600;
+    height:22;
+}
+
+.kirmiziOran{
+    color:#fff!important;
+    background-color:rgb(231, 40, 37)!important;
+    padding:0.01px 4px;
+    border-radius:3.5px;
+    height:22;
+    width:0.005%
+}
+
+.progressBartxt{
+    text-align: center;
+    font-size:100%;
+    color:rgb(0, 0, 0)!important;
+}
+
+.CepTelefonutxt{
+    margin: 50px 0px 0px 0px;
+    font-size:90%;
+    color:rgb(80, 80, 80)
+}
+.txtCepNumara {
+    margin: 5px 30px 0px 70px;
+    width: 530;
+    height: 35;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    border-left-width: 0;
+}
+
+.txtCepNumara:focus{
+    outline: none;
+}
+
+.Sehirtxt{
+    margin: 15px 30px 0px 0px;
+    font-size:90%;
+    color:rgb(80, 80, 80)
+}
+
+.SehirlerSelectBox{
+    margin: 5px 30px 0px 0px;
+    width: 600;
+    height: 35;
+    border-color: lightgray;
+}
+.SehirlerSelectBox:focus{
+    outline:none;
+}
+.SehirlerSelectBox:hover{
+    outline:none;
+}
+.Ilcetxt{
+    margin: 15px 30px 0px 0px;
+    font-size:90%;
+    color:rgb(80, 80, 80)
+}
+
+.IlcelerSelectBox{
+    margin: 5px 30px 0px px;
+    width: 600;
+    height: 35;
+    border-color: lightgray;
+}
+.IlcelerSelectBox:focus{
+    outline:none;
+}
+.IlcelerSelectBox:hover{
+    outline:none;
+}
+.ulkeler{
+    margin:-35px 30px 0px 0px;
+    width: 70;
+    height: 35;
+    border-right-width: 0;
+    border-color: lightgray;
+}
+.ulkeler:hover{
+    background: #F1F1F1;
+    outline: none;
+}
+.ulkeler:focus{
+    outline:none;
+}
+
+.ulkeler2{
+    margin: -35px 30px 0px 0px;
+    width: 70;
+    height: 35;
+    border-right-width: 0;
+    border-color: lightgray;
+}
+.ulkeler2:hover{
+    background: #F1F1F1;
+    outline: none;
+}
+
+.checkboxpuyeol{
+    margin: -13px 0px 0px 0px;
+    font-size: 14px;
+    cursor: context-menu;    
+}
+
+.checkboxkampanya1{
+    margin: 30px 0px 0px 0px;
+    cursor: pointer;
+}
+.checkboxkampanya2{
+    margin: 5px 0px 0px 0px;
+    cursor: pointer;
+}
+
+.Adrestxt{
+    margin: 30px 30px 0px 0px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.txtTelefon{
+    margin: 5px 30px 0px 70px;
+    width: 1160;
+    height: 35;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    border-left-width: 0;
+}
+.txtTelefon:focus{
+    border-color:black;
+    outline: none;
+    
+}
+
+
+.AltFormtxt{
+    margin: 15px 30px 0px 0px;
+    width: 100%;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.yanFormtxt{
+    margin: -15px 30px 0px 95px;
+    font-size: 13px;
+}
+
+.txtEposta{
+    margin: 5px 30px 0px 0px;
+    width: 1230;
+    height: 35;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+.txtEposta:focus{
+    outline:none;
+    border-color:black;
+}
+
+.txtAltForm{
+    margin: 5px 30px 0px 0px;
+    width: 1230;
+    height: 35;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.txtAltForm:focus{
+    background: #F1F1F1;
+    border-color:black;
+    outline: none;
+}
+
+.SehirlerSelectBox2{
+    margin: 5px 30px 0px 0px;
+    width: 610;
+    height: 35;
+    border-color: lightgray;
+    border-style: solid;
+}
+.SehirlerSelectBox2:focus{
+    outline:none;
+    border-color:black;
+}
+
+.IlcelerSelectBox2{
+    margin: -35px 30px 0px 620px;
+    width: 610;
+    height: 35;
+    border-color: lightgray;
+    border-style: solid;
+}
+.IlcelerSelectBox2:focus{
+    outline:none;
+    border-color:black;
+}
+
+.AdrestxtArea{
+    margin: 15px 30px 0px 0px;
+    resize: none;
+    width: 1230;
+    height: 60;
+    border-color: lightgray;
+    border-style: solid;
+}
+.AdrestxtArea:focus{
+    outline:none;
+    border-color:black;
+}
+
+.AltForm1txt{
+    margin: 30px 30px 0px 0px;
+    width: 100%;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tcDegil{
+    font-size: 14px;
+    color:#444444;    
+}
+
+.tcDegilcheckbox{
+    margin: 5px 0px 0px 0px;
+    cursor: context-menu;
+}
+.radiobutton1{
+    margin: 30px 0px 0px 0px;
+}
+.radiobuttontxt1{
+    
+    cursor: pointer;
+    color: #393737;
+    font-size: 13px;
+}
+.radiobutton2{
+    margin: 0px 0px 0px 20px;
+}
+.radiobuttontxt2{
+    cursor: pointer;
+    color: #393737;
+    font-size: 13px;
+}
+
+.uyeOlButton{
+    margin: 20px 0px 0px 500px;
+    height: 27px;
+    width: 200px;
+    background: #ec95a3;
+    border: none;
+    border-color: #ec95a3;
+    color: white;
+}
+.uyeOlButton:hover{
+    background: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+.checkboxkampanya{
+    font-size: 14px;
+    cursor: pointer;
+    color: #444444;
+}
+
+.solIcerik{
+    margin: -30px 0px 0px 100px;
+    width: 610px;
+    min-height: 450px;
+    border-width: 1px;
+    border-color: #EEEEEE;
+    color: black;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+}
+
+.sagIcerik{
+    margin: -482px 0px 0px 730px;
+    width: 600px;
+    min-height: 450px;
+    border-width: 1px;
+    border-color: #EEEEEE;
+    color: black;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+}
+
+.altIcerik{
+    margin: 0px 0px 0px 100px;
+    width: 1230px;
+    border-width: 1px;
+    border-color: #EEEEEE;
+    color: black;
+    padding: 10;
+    left: 20px;
+    list-style-type: none;
+}
+
+.ulkeler4{
+    margin: 5px 30px 0px 0px;
+    width: 1230;
+    height: 35;
+    border: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.ulkeler4:focus{
+    border-color:black;
+    outline: none;
 }
