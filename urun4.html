@@ -1,0 +1,432 @@
+<html>
+<head>
+    <title>
+        Zigavus
+    </title>
+    <link rel="Shortcut Icon" href="https://www.dermoeczamarket.com/Uploads/Images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script type="text/javascript" src="app5.js"></script>
+<style>
+
+    A {
+        text-decoration: none;
+    }
+
+    #ul1 {
+        margin: 0px 0px 0px -40px;
+    }
+
+
+
+    #lisepet{
+        width:350px;
+        height: 200px;
+        position: absolute;
+        border-width: 1px;
+        border-color: lightgray;
+        color: black;
+        border-style: solid;
+        list-style-type: none;
+        background: white;
+        margin: 20px 0px 0px 1025px;
+
+    }
+
+    #hover1:hover + #hover2{
+        visibility: visible;
+    }
+
+        
+
+    #sepetcart{
+        margin: 35px 0px 7px 160px;
+    }
+
+    #sepetcartalan{
+        margin: 35px 0px 0px -28px;
+    }
+
+    #sepetp{
+
+        text-align: center;
+        margin-top: 5px;
+    }
+
+
+    #lisepet2{
+        width:300px;
+        height: 25px;
+        position: absolute;
+        color:white;
+        border-style: none;
+        list-style-type: none;
+        background: #F776C4;
+        margin: 130px 0px 0px 1050px;
+        text-align: center;
+        padding-top: 5px;
+
+    }
+
+    #sepetbtn{
+        background:orange;
+        color:white;
+        width: 140px;
+        height: 28px;
+        position: absolute;
+        border:none;
+        border-color:orange;
+        margin: 170px 0px 0px 1050px;
+        cursor:pointer;
+    }
+
+    #sepetbtn:hover{
+        background:black;
+        color:white;
+    }
+
+
+    #sepetbtn2{
+        background:orange;
+        color:white;
+        width: 140px;
+        height: 28px;
+        position: absolute;
+        border:none;
+        border-color:orange;
+        margin: 170px 0px 0px 1211px;
+        cursor:pointer;
+    }
+
+    #sepetbtn2:hover{
+        background:black;
+        color:white;
+    }
+
+    #hover2{
+        visibility: hidden;
+    }
+
+    #hover3{
+        visibility: hidden;
+    }
+
+    .a1:hover + #hover3{
+        visibility: visible;
+    }
+
+    #bosluk {
+        margin-top:0px;
+    }
+
+    #urun1_img4{
+        margin: 20px 0px 0px 125px;
+        width: 400px;
+        height: 350px;
+        cursor: crosshair;
+    }
+
+    #urun1_img42{
+        margin: 0px 0px -120px -420px;
+        width:100px;
+        height: 100px;
+        cursor: pointer;
+    }
+
+    #urun1_marka4{
+        margin: -330px 0px 15px 560px;
+        font-weight: bold;
+        font-size:18;
+    }
+
+    #urun1_isim4{
+        margin: 0px 0px 5px 560px;
+        font-weight: bold;
+        color: black;
+        font-size: 20;
+    }
+
+    #urun1_p4{
+        margin: 5px 0px 50px 560px;
+        font-size: 17;
+    }
+
+    #urun1_fiyat4{
+        margin: 0px 0px 0px 560px;
+        font-weight: bold;
+        color: #dee066;
+        font-size: 35;
+    }
+
+    #urun1_fiyat42{
+        margin: -26px 0px 0px 655px;
+        font-weight: bold;
+        color: #dee066;
+        font-size: 18;
+    }
+
+    #a4{
+        color: #666666;
+        font-weight: initial;
+    }
+
+    #li4{
+        height: 150px;
+        width: 900px;
+        border: solid;
+        border-color: #EEEEEE;
+        list-style-type: none;
+        border-width: 1px;
+        margin: 30px 0px 0px 560px;
+        border-left: none;
+        border-right: none;
+    }
+
+    #eksi{
+        height: 56px;
+        width: 56px;
+        margin: 60px 0px 0px 0px;
+        background: url(minus.png) no-repeat top 0 left 0;
+        outline-color: #EEEEEE;
+        outline: solid;
+        border:none;
+        background-position:center;
+        outline-width: 1px;
+        cursor: pointer;
+    }
+
+    #inputsayi{
+        height:56px;
+        width: 120px;
+        margin: 0px 0px -15px -3px;
+        text-align: center;
+    }
+
+    #arti{
+        height: 56px;
+        width: 56px;
+        margin: 60px 0px 0px -4px;
+        background: url(add.png) no-repeat top 0 left 0;
+        outline-color: #EEEEEE;
+        outline: solid;
+        border:none;
+        background-position:center;
+        outline-width: 1px;
+        cursor: pointer;
+    }
+
+    #sepet{
+        height: 50px;
+        width: 300px;
+        background-color:#ec95a3;
+        color: white;
+        border-radius: 6px;
+        border-color:#ec95a3;
+        outline: none;
+        margin: -60px 0px 0px 245px;
+        font-weight: bold;
+    }
+
+    #hemenal{
+        height: 50px;
+        width: 300px;
+        background-color:#dee066;
+        color: white;
+        border-radius: 6px;
+        border-color:#dee066;
+        outline: none;
+        margin: -60px 0px 0px 555px;
+        font-weight: bold;
+    }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color:none;
+        color: white;
+        cursor: pointer;
+        padding: none;
+        border-radius: none;
+    }
+
+    #sepet:hover{
+        background: gray;
+        border-color: gray;
+        cursor: pointer;
+    }
+
+    #hemenal:hover{
+        background: gray;
+        border-color: gray;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+
+<body>
+    <div id="header">
+        <a href="dermoeczamarket.html">
+            <img src="dermologo.png" class="image1">
+        </a>
+
+        <div id="SearchButton">
+            <button v-on:click="search" class="searchButton"></button>
+        </div>
+
+        <div id="Search"><input class="searchbar"></div>
+
+        <a href="dermoeczamarket.html">
+            <img src="like.png" class="image2">
+        </a>
+
+        <a href="dermoeczamarket.html">
+            <p class="yazi1">Favorilerim</p>
+        </a>
+
+        <a href="dermoeczamarket.html">
+            <img src="search.png" class="image3">
+        </a>
+
+        <image title="Üye Giriþi" src="user.png"  class="uyeGirisi">
+
+        <a href='dermoecza_üyegiriþi.html'>
+            <p title="Üye Giriþi" class="yazi3">ÜYE GÝRÝÞÝ</p>
+        </a>
+
+        <a href='dermoecza_üyeol.html'>
+            <p title="Üye Ol" class="yazi2">| ÜYE OL</p>
+        </a>
+
+
+        <a href='dermoecza_sepet.html'>
+            <image src="shopping-cart.png" class="image4"></image>
+            <image src="oval.png" class="image5"></image>
+            <image src="shopping-cart-outline.png" class="image6"></image>
+            <p class="shopping-cart-number">0</p>
+        </a>
+
+        <div id="hover2">
+            <li id="lisepet">
+
+                <img id="sepetcart" src="shopping-cart.png">
+                <img id="sepetcartalan" src="shopping-cart-outline.png">
+
+                <p id="sepetp"> Sepetinizde ürün bulunmamaktadýr.</p>
+
+                </li><li id="lisepet2">
+                    Genel Toplam: t0,00
+                </li>
+
+                <button id="sepetbtn"> Sepetim</button>
+                <button id="sepetbtn2"> SÝPARÝÞÝ TAMAMLA</button>
+            </li>
+            
+        </div>
+
+    </div>
+
+
+    <div>
+        <nav class="nav1">
+            <nav class="nav2">
+
+                <ul id="ul1" class="ul4">
+
+                    <img title="Kategoriler" src="kategori.png" class="kategoriler">
+                    <li id="li1" title="Kategoriler" class="li1"><a class="a" href="#">KATEGORÝLER</a></li>
+
+                </ul>
+            </nav>
+        </nav>
+    </div>
+
+    <div id="konum">
+        <div id="app">
+            <div id="urunler2" v-for="(item, index) in urunler5">
+
+                <img id="urun1_img4"  v-bind:src="item.url">
+                
+                <img id="urun1_img42" v-bind:src="item.url">
+
+                <p id="urun1_marka4">Marka: <a id="a4" href="dermoecza_sepet">{{item.marka}}</a></p>
+
+                <p href="dermoeczamarket.html" id="urun1_isim4" >{{item.isim}}</p>
+
+                <p id="urun1_p4">Stok Kodu: {{item.sayi}}</p>
+                
+                <p id="urun1_fiyat4">{{item.fiyat}}</p>
+                <p id="urun1_fiyat42">(KDV Dahil)</p>
+
+                <li id="li4">
+                    <div id="islem">
+                        <button id="eksi" onclick="azalt()"> </button>
+                        <input id="inputsayi" v-bind:value="i">   </input>
+                        <button id="arti" onclick="arttir()"> </button>
+                    </div>
+
+                    <button id="sepet"> SEPETE EKLE</button>
+                    <button id="hemenal"> HEMEN AL</button>
+
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <img src="up-arrow.png" onclick="topFunction()" id="myBtn">
+
+</body>
+
+<script>
+
+    var islem = new Vue({
+        el: '#islem',
+
+        data: {
+            i=1
+        },
+
+        methods: {
+            eksilt()
+            {
+                document.getElementById("eksi").value=this.i--;
+            },
+
+            arttir()
+            {
+                document.getElementById("arti").value=this.i++;
+            }
+        },
+
+    })
+
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+    
+</script>
+</html>
