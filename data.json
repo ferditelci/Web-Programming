@@ -505,5 +505,42 @@
         }
 
 
+    ],
+
+    "urunler2" : [
+
+        {
+            "url" : "https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/zigavus-forte-3-al-2-ode-kuru-ve-normal--e00e.jpg",
+            "isim" : "ZİGAVUS FORTE 3 AL 2 ÖDE KURU VE NORMAL SAÇLAR",
+            "sayi" :"(8699349139377)",
+            "fiyat" : "₺60,00",
+            "marka" : "Zigavus"
+        },
+
+        {
+            "url" : "https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/zigavus-forte-3-al-2-ode-yagli-saclar-ic-97dc.jpg",
+            "isim" : "ZİGAVUS FORTE 3 AL 2 ÖDE YAĞLI SAÇLAR İÇİN",
+            "sayi" :"(8699349139360)",
+            "fiyat" : "₺60,00",
+            "marka" : "Zigavus"
+        },
+
+        {
+            "url" : "https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/zigavus-extra-plus-sarimsak-ozlu-3-al-2--24ca.jpg",
+            "isim" : "ZİGAVUS EXTRA PLUS SARIMSAK ÖZLÜ 3 AL 2 ÖDE",
+            "sayi" :"(8699349139919)",
+            "fiyat" : "₺50,00",
+            "marka" : "Zigavus"
+
+        },
+
+        {
+            "url" : "https://www.dermoeczamarket.com/Uploads/UrunResimleri/thumb/zigavus-medicade-hassas-sac-deri-sampuan-a799.jpg",
+            "isim" : "ZİGAVUS MEDİCADE+ HASSAS SAÇ DERİ ŞAMPUANI 250 ML",
+            "sayi" :"(8699349138165)",
+            "fiyat" : "₺30,00",
+            "marka" : "Zigavus"
+        }
+
     ]
 }
