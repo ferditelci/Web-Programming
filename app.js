@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
 
         data: {
             urunler: [],
+            urunler2: [],
             sepet: [],
         },
 
@@ -12,7 +13,7 @@ window.addEventListener('load', () => {
             sepeteEkle(index){
                 const item = this.urunler.splice(index, 1);
                 this.sepet.push(item[0]);
-            }
+            },
         },
 
         created() {
@@ -21,6 +22,7 @@ window.addEventListener('load', () => {
                 .then((res) => {
                     this.urunler = res.urunler;
                     this.sepet = res.sepet;
+                    this.urunler2 = res.urunler2;
                 })
         },
     })
